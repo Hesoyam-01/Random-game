@@ -50,12 +50,13 @@ class Game {
         while (true) {
             String restartNum = scanner.next();
 
-            if (restartNum.equals("1")) {
-                return true;
-            } else if (restartNum.equals("0")) {
-                return false;
-            } else {
-                System.out.println("Неверный ввод. Сыграть еще раз? Да - '1', Нет - '0'");
+            switch (restartNum) {
+                case "1":
+                    return true;
+                case "0":
+                    return false;
+                default:
+                    System.out.println("Неверный ввод. Сыграть еще раз? Да - '1', Нет - '0'");
             }
         }
     }
