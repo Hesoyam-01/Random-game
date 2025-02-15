@@ -15,7 +15,6 @@ class Game {
         int tryNumber = 1;
         int random = new Random().nextInt(10);
         System.out.println("Загадано число от 0 до 9. У тебя 3 попытки, чтобы угадать его.");
-        System.out.println(random);
 
         while (tryNumber <= 3) {
             Scanner scanner = new Scanner(System.in);
