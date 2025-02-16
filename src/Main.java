@@ -33,19 +33,20 @@ class Game {
                         System.out.println("Меньше.");
                     }
                 } else {
-                    System.out.println("Угадал! Хочешь сыграть еще раз? Да - '1', Нет - '0'");
+                    System.out.println("Угадал!");
                     return;
                 }
             } else {
                 System.out.println("Нужно ввести число. Попробуй еще раз.");
             }
         }
-        System.out.println("Не угадал! Загаданное число - " + random + ". Хочешь сыграть еще раз? Да - '1', Нет - '0'");
+        System.out.println("Не угадал! Загаданное число - " + random + ".");
     }
 
 
     boolean restart() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Хочешь сыграть еще раз? Да - '1', Нет - '0'");
 
         while (true) {
             String restartNum = scanner.next();
