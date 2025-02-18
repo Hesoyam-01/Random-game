@@ -3,15 +3,14 @@ import java.util.Random;
 
 class Main {
     public static void main(String[] args) {
-        Game game = new Game();
         do {
-            game.start();
-        } while (game.restart());
+            Game.start();
+        } while (Game.restart());
     }
 }
 
 class Game {
-    void start() {
+    static void start() {
         int tryNumber = 1;
         int random = new Random().nextInt(10);
         System.out.println("Загадано число от 0 до 9. У тебя 3 попытки, чтобы угадать его.");
@@ -44,7 +43,7 @@ class Game {
     }
 
 
-    boolean restart() {
+    static boolean restart() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Хочешь сыграть еще раз? Да - '1', Нет - '0'");
 
